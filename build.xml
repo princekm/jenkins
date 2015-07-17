@@ -1,7 +1,7 @@
 <project name="My Project" default="help" basedir=".">
   <!-- Define the properties used by the build -->
   <property name="app.name"      value="hello"/>
-  <property name="tcserver.home" value="/home/prinz/Downloads/apache-tomcat-7.0.63" />
+  <property name="tcserver.home" value="/usr/local/apache-ant" />
   <property name="work.home"    value="${basedir}/work"/>
   <property name="dist.home"     value="${basedir}/dist"/>
   <property name="src.home"      value="${basedir}/src"/>
@@ -25,6 +25,7 @@
     <fileset dir="${tcserver.home}/bin">
       <include name="*.jar"/>
     </fileset>
+
     <pathelement location="${tcserver.home}/lib"/>
     <fileset dir="${tcserver.home}/lib">
       <include name="*.jar"/>
